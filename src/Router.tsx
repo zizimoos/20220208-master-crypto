@@ -6,8 +6,8 @@ const Router = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Coin />} />
-        <Route path="/:id" element={<Coins />} />
+        <Route path="/" element={<Coins />} />
+        <Route path="/:id" element={<Coin />} />
       </Routes>
     </BrowserRouter>
   );

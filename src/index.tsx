@@ -56,6 +56,15 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+a {
+  text-decoration: none;
+}
+* {
+  box-sizing : border-box;
+}
+body {
+  background-color:${(props) => props.theme.colors.backgroundColor};
+}
 `;
 
 ReactDOM.render(
