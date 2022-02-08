@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import { createGlobalStyle, ThemeProvider } from "styled-components";
-import { theme } from "./theme";
+import { theme, darkTheme } from "./theme";
 
 const GlobalStyle = createGlobalStyle`
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -69,7 +69,7 @@ body {
 
 ReactDOM.render(
   <React.StrictMode>
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={darkTheme}>
       <GlobalStyle />
       <App />
     </ThemeProvider>
