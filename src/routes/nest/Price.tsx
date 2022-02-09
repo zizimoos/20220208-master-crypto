@@ -11,6 +11,7 @@ import {
   AiFillYoutube,
   AiOutlineCoffee,
   AiFillGithub,
+  AiFillRedditCircle,
 } from "react-icons/ai";
 
 const Overview = styled.div`
@@ -64,7 +65,6 @@ const Price = () => {
     ["coinDetail", id],
     () => coinDetail(id!)
   );
-  console.log(detailInfo);
   return (
     <div>
       {detailLoading ? (
@@ -86,9 +86,9 @@ const Price = () => {
           <Title>Team Member</Title>
           <Overview>
             <ul>
-              {detailInfo?.team.map((man) =>
+              {detailInfo?.team.map((man, index) =>
                 man ? (
-                  <TeamMember>
+                  <TeamMember key={index}>
                     <div>
                       <BsPersonCircle />
                     </div>
@@ -105,8 +105,8 @@ const Price = () => {
           <Title>Links</Title>
           <Overview>
             <LinksExtended>
-              {detailInfo?.links_extended.map((link) => (
-                <div>
+              {detailInfo?.links_extended.map((link, index) => (
+                <div key={index}>
                   <div>
                     <a href={link.url}>
                       {link.type === "explorer" ? (
@@ -119,6 +119,10 @@ const Price = () => {
                         <AiFillYoutube />
                       ) : link.type === "wallet" ? (
                         <AiFillGithub />
+                      ) : link.type === "source_code" ? (
+                        <AiFillGithub />
+                      ) : link.type === "reddit" ? (
+                        <AiFillRedditCircle />
                       ) : (
                         <AiOutlineCoffee />
                       )}
