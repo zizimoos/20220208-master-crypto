@@ -1,13 +1,13 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Coin from "./routes/Coin";
-import Coins from "./routes/Coins";
+import CoinReactQuery from "./routes/CoinReactQuery";
+import CoinsReactQuery from "./routes/CoinsReactQuery";
 
 const Router = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
-        <Route path="/" element={<Coins />} />
-        <Route path="/:id/*" element={<Coin />} />
+        <Route path="/" element={<CoinsReactQuery />} />
+        <Route path="/:id/*" element={<CoinReactQuery />} />
       </Routes>
     </BrowserRouter>
   );

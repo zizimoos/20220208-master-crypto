@@ -4,7 +4,7 @@ export const darkTheme: DefaultTheme = {
   colors: {
     bgColor: "silver",
     bgColor_02: "White",
-    bgColorBlack: "black",
+    bgColorBlack: "rgba(0, 0, 0, 0.5)",
     backgroundColor: "darkSlateGray",
     textColor: "white",
     textColorskyBlue: "skyBlue",
@@ -12,13 +12,13 @@ export const darkTheme: DefaultTheme = {
   },
 };
 
-export const theme: DefaultTheme = {
+export const lightTheme: DefaultTheme = {
   colors: {
     bgColor: "navy",
     bgColor_02: "White",
-    bgColorBlack: "black",
+    bgColorBlack: "rgba(0, 0, 0, 0.2)",
     backgroundColor: "cornflowerblue",
-    textColor: "black",
+    textColor: "seashell",
     textColorskyBlue: "skyBlue",
     textColorIvory: "ivory",
   },

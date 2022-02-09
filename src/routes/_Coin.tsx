@@ -160,10 +160,10 @@ const Coin = () => {
             </Tab>
           </Tabs>
 
-          <Routes>
+          {/* <Routes>
             <Route path="price" element={<Price />}></Route>
             <Route path="chart" element={<Chart />}></Route>
-          </Routes>
+          </Routes> */}
         </>
       )}
     </Container>

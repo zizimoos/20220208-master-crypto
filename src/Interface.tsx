@@ -8,6 +8,7 @@ export interface ICoinDetail {
   type: string;
   tags: Tag[];
   team: Team[];
+  contract: string;
   description: string;
   message: string;
   open_source: boolean;
