@@ -82,7 +82,7 @@ const Price = () => {
           <Title>White Paper</Title>
           <Overview>{detailInfo?.whitepaper.link}</Overview>
           <Title>Source Code</Title>
-          <Overview>{detailInfo?.links.source_code[0]}</Overview>
+          <Overview>{detailInfo?.links.source_code}</Overview>
           <Title>Team Member</Title>
           <Overview>
             <ul>
